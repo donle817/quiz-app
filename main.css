@@ -1,18 +1,13 @@
-body * {
+body {
   box-sizing: border-box;
   font-family: 'Metrophobic', sans-serif;
+  height: 100%;
+  margin: 0, auto;
 }
 
 html {
-  background: url('https://images6.alphacoders.com/689/689021.jpg') no-repeat center center fixed; 
+  background: url('https://stmed.net/sites/default/files/dallas-cowboys-wallpapers-31003-1576803.jpg') no-repeat center center fixed; 
   background-size: cover;
-}
-
-html, body {
-  height: 100%;
-}
-
-#container {
   height: 100%;
 }
 
@@ -28,6 +23,7 @@ h2 {
   background-color: gray;
   text-align: center;
   font-size: 24px;
+  padding: 2%;
 }
 
 #start-page {
@@ -45,48 +41,35 @@ h2 {
   justify-content: space-between;
 }
 
-#question {
-  margin: 0;
-
+#container {
+  height: 100%;
 }
 
 label {
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
     color: #ffffff;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s ease-out;
-    line-height: 22px
+    line-height: 24px;
 }
 
-label:nth-child(1) {
-    background-color: rgb(0, 18, 184)
-}
-label:nth-child(2) {
-    background-color: rgb(0, 18, 184)
-}
-label:nth-child(3) {
-    background-color: rgb(0, 18, 184)
-}
-label:nth-child(4) {
-    background-color: rgb(0, 18, 184)
+label:nth-child(1), label:nth-child(2), label:nth-child(3), label:nth-child(4) {
+    background-color: rgba(0, 18, 184, .7)
 }
 
 button {
   display: block;
-  min-height: 60px;
-  min-width: 60px;
-  margin-bottom: 24px;
+  height: 60px;
+  width: 200px;
+  margin-bottom: 28px;
+  padding: 8px 6px;
   font-size: 32px;
   border: none;
   background-color: black;
   color: #ffedfc;
   border-radius: 5px;
-  padding: 8px 6px;
-  width: 60%;
-  max-width: 200px;
 }
 
 button:hover {
@@ -115,19 +98,21 @@ label {
 }
 
 #js-submit-button {
-  width: 60%;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
 }
 
 #status-bar {
-  background-color: rgba(255, 255, 255, .4);
+  background-color: gray;
+  padding: 2%;
+  margin-top: 1%;
 }
 
 #question-count, #score-count {
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #score-count {
@@ -141,7 +126,7 @@ label {
 }
 
 #js-next-button {
-  margin: 24px auto;
+  margin: 20px auto;
 }
 
 #js-restart-button {
@@ -156,7 +141,8 @@ label {
   #question-count, #score-count {
     display: inline-block;
     font-size: 28px;
-    margin: 0 10px 10px;
+    margin-top: 0;
+    margin-right: 10px;
   }
 
   #score-count {
@@ -176,7 +162,6 @@ label {
 @media only screen and (min-width: 640px) {
   .feedback-page img {
     display: block;
-    width: 650px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -184,10 +169,8 @@ label {
 
 @media only screen and (min-width: 960px) {
   .feedback-page h2 {
-    width: 650px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
   }
 
   form {
